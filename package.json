@@ -1,0 +1,21 @@
+{
+  "name": "node-scripts",
+  "version": "1.0.0",
+  "description": "Using scripts in Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test-exit": "echo \"Exit Test\" && exit 0",
+    "hello": "echo 'Hello World!'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibbrett/Node-Scripts.git"
+  },
+  "author": "Brett Morriss",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ibbrett/Node-Scripts/issues"
+  },
+  "homepage": "https://github.com/ibbrett/Node-Scripts#readme"
+}

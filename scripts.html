@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang='en'>
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'>
+	<title>Node Scripts</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab|Montserrat:400,400i,600&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<h1 class='header-title'>Node Scripts</h1>
+
+<h2>Notes</h2>
+<ul>
+<li>npm scripts are found in your project's package.json file</li>
+<li><a href='https://docs.npmjs.com/cli/v6/using-npm/scripts'>npm custom scripts</a> must be preceded by either run-script or run</li>
+</ul>
+
+<pre>
+"scripts": {
+	"test": "echo \"Error: no test specified\" && exit 1",
+	"test-msg": "echo \"Exit Test\" && exit 0",
+	"start": "node getDrugList"
+}
+</pre>
+
+<pre>
+<b>## npm start ##</b>
+
+When issuing the 'npm start' command node will look for the key 'start' in the scripts object of package.json.
+
+	If found it will run the command value specified.
+	If not found node will run 'node server.js'
+		If server.js does not exists node will write an error to the console:
+			npm ERR! missing script: start
+</pre>
+
+<pre>
+<b>## --silent ##</b>
+
+Adding this flag sets the log level to silent. It will suppress log output to the console.
+
+Or globally by creating a .npmrc file(this file can be either in your project directory or your home folder) with the following:
+
+loglevel=silent
+</pre>
+
+<pre>
+<b>## resources ##</b>
+
+<a href='https://www.freecodecamp.org/news/introduction-to-npm-scripts-1dbb2ae01633/'>https://www.freecodecamp.org/news/introduction-to-npm-scripts-1dbb2ae01633/</a>
+
+<a href='https://nodejs.dev/learn/output-to-the-command-line-using-nodejs'>Output to the command line using Node.js</a>
+</pre>
+
+
+</body>
+</html>
